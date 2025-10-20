@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_231ea738cfe8d104dbc97192434589ee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_231ea738cfe8d104dbc97192434589ee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_231ea738cfe8d104dbc97192434589ee = L.map(
+                "map_231ea738cfe8d104dbc97192434589ee",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c1750c194d53fd8a1cb88893ebfe0f16 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c1750c194d53fd8a1cb88893ebfe0f16.addTo(map_231ea738cfe8d104dbc97192434589ee);
+        
+    
+            var marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_6c7ee941e8a3ea534b06cc319398d9b2 = L.circleMarker(
+                [50.6402809, 4.6667145],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_2f503c136d54e743ffc105dc97a4fc91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0efb9f6aad5e128b04e9c34e798657d0 = $(`<div id="html_0efb9f6aad5e128b04e9c34e798657d0" style="width: 100.0%; height: 100.0%;"><b>Belgium</b><br>Revenue: ₹41,196<br>Color Level: red</div>`)[0];
+                popup_2f503c136d54e743ffc105dc97a4fc91.setContent(html_0efb9f6aad5e128b04e9c34e798657d0);
+            
+        
+
+        circle_marker_6c7ee941e8a3ea534b06cc319398d9b2.bindPopup(popup_2f503c136d54e743ffc105dc97a4fc91)
+        ;
+
+        
+    
+    
+            var circle_marker_84878480978d4679f866f5379b7bf4cd = L.circleMarker(
+                [59.6749712, 14.5208584],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_9f19e58d172e6413c14dc40c9405b0cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8405d046e717336160c5deb19548143 = $(`<div id="html_e8405d046e717336160c5deb19548143" style="width: 100.0%; height: 100.0%;"><b>Sweden</b><br>Revenue: ₹38,378<br>Color Level: red</div>`)[0];
+                popup_9f19e58d172e6413c14dc40c9405b0cb.setContent(html_e8405d046e717336160c5deb19548143);
+            
+        
+
+        circle_marker_84878480978d4679f866f5379b7bf4cd.bindPopup(popup_9f19e58d172e6413c14dc40c9405b0cb)
+        ;
+
+        
+    
+    
+            var circle_marker_7cac3e367f6298b177780ce5542a4f39 = L.circleMarker(
+                [36.5748441, 139.2394179],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_466db4bb3bab274d59dc81116960de66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad1506e2ee6d15c6b9ea32a1b679ff8a = $(`<div id="html_ad1506e2ee6d15c6b9ea32a1b679ff8a" style="width: 100.0%; height: 100.0%;"><b>Japan</b><br>Revenue: ₹37,416<br>Color Level: red</div>`)[0];
+                popup_466db4bb3bab274d59dc81116960de66.setContent(html_ad1506e2ee6d15c6b9ea32a1b679ff8a);
+            
+        
+
+        circle_marker_7cac3e367f6298b177780ce5542a4f39.bindPopup(popup_466db4bb3bab274d59dc81116960de66)
+        ;
+
+        
+    
+    
+            var circle_marker_825934eeb971417ea695f8921d55fc09 = L.circleMarker(
+                [63.2467777, 25.9209164],
+                {"bubblingMouseEvents": true, "color": "darkorange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkorange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_06466d12d8aa3ddec1b478e6e4cab26a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fdb90a26b42fc83667b4ffbd58576e0 = $(`<div id="html_8fdb90a26b42fc83667b4ffbd58576e0" style="width: 100.0%; height: 100.0%;"><b>Finland</b><br>Revenue: ₹22,546<br>Color Level: darkorange</div>`)[0];
+                popup_06466d12d8aa3ddec1b478e6e4cab26a.setContent(html_8fdb90a26b42fc83667b4ffbd58576e0);
+            
+        
+
+        circle_marker_825934eeb971417ea695f8921d55fc09.bindPopup(popup_06466d12d8aa3ddec1b478e6e4cab26a)
+        ;
+
+        
+    
+    
+            var circle_marker_a348fcb28cb0c1bcb45b25cd7d2c9fb0 = L.circleMarker(
+                [1.357107, 103.8194992],
+                {"bubblingMouseEvents": true, "color": "darkorange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkorange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_971d36f1fbe18f5b26a99c42432822a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2608b436d73837f9db2019d361d63d0f = $(`<div id="html_2608b436d73837f9db2019d361d63d0f" style="width: 100.0%; height: 100.0%;"><b>Singapore</b><br>Revenue: ₹21,279<br>Color Level: darkorange</div>`)[0];
+                popup_971d36f1fbe18f5b26a99c42432822a4.setContent(html_2608b436d73837f9db2019d361d63d0f);
+            
+        
+
+        circle_marker_a348fcb28cb0c1bcb45b25cd7d2c9fb0.bindPopup(popup_971d36f1fbe18f5b26a99c42432822a4)
+        ;
+
+        
+    
+    
+            var circle_marker_3e1926da8b99a0e8daaf32189b04e386 = L.circleMarker(
+                [49.2123066, -2.1256],
+                {"bubblingMouseEvents": true, "color": "darkorange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkorange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_9d4bade76e8791bd2906c4f1093d46df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_264dc27a23a391bca1320fc6933f686f = $(`<div id="html_264dc27a23a391bca1320fc6933f686f" style="width: 100.0%; height: 100.0%;"><b>Channel Islands</b><br>Revenue: ₹20,450<br>Color Level: darkorange</div>`)[0];
+                popup_9d4bade76e8791bd2906c4f1093d46df.setContent(html_264dc27a23a391bca1320fc6933f686f);
+            
+        
+
+        circle_marker_3e1926da8b99a0e8daaf32189b04e386.bindPopup(popup_9d4bade76e8791bd2906c4f1093d46df)
+        ;
+
+        
+    
+    
+            var circle_marker_610543d6d7a3569603304d58180c4f36 = L.circleMarker(
+                [55.670249, 10.3333283],
+                {"bubblingMouseEvents": true, "color": "darkorange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkorange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_638ed763d129721d0dc75a0163330b75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dcb6bf1ce00322e5e182850a544f24c4 = $(`<div id="html_dcb6bf1ce00322e5e182850a544f24c4" style="width: 100.0%; height: 100.0%;"><b>Denmark</b><br>Revenue: ₹18,955<br>Color Level: darkorange</div>`)[0];
+                popup_638ed763d129721d0dc75a0163330b75.setContent(html_dcb6bf1ce00322e5e182850a544f24c4);
+            
+        
+
+        circle_marker_610543d6d7a3569603304d58180c4f36.bindPopup(popup_638ed763d129721d0dc75a0163330b75)
+        ;
+
+        
+    
+    
+            var circle_marker_65af63a54e6ef5c9b0ea42a3a1abae82 = L.circleMarker(
+                [42.6384261, 12.674297],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_270c2309605a6a3cdd49f9294124e655 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68015c960f6d588bba74e01cc4cf3f62 = $(`<div id="html_68015c960f6d588bba74e01cc4cf3f62" style="width: 100.0%; height: 100.0%;"><b>Italy</b><br>Revenue: ₹17,483<br>Color Level: orange</div>`)[0];
+                popup_270c2309605a6a3cdd49f9294124e655.setContent(html_68015c960f6d588bba74e01cc4cf3f62);
+            
+        
+
+        circle_marker_65af63a54e6ef5c9b0ea42a3a1abae82.bindPopup(popup_270c2309605a6a3cdd49f9294124e655)
+        ;
+
+        
+    
+    
+            var circle_marker_23a300783f541f02f6dba813d85314ef = L.circleMarker(
+                [34.9174159, 32.8899027],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_c10d46b9529494a572055b92f92666b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35b8ad18f6bf832b42fb604d58d72c90 = $(`<div id="html_35b8ad18f6bf832b42fb604d58d72c90" style="width: 100.0%; height: 100.0%;"><b>Cyprus</b><br>Revenue: ₹13,590<br>Color Level: orange</div>`)[0];
+                popup_c10d46b9529494a572055b92f92666b5.setContent(html_35b8ad18f6bf832b42fb604d58d72c90);
+            
+        
+
+        circle_marker_23a300783f541f02f6dba813d85314ef.bindPopup(popup_c10d46b9529494a572055b92f92666b5)
+        ;
+
+        
+    
+    
+            var circle_marker_f7672f1402f29b0d434e66d4f3534ef9 = L.circleMarker(
+                [47.59397, 14.12456],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_2b4f3f077f11192bb87c2075b95082bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a7be67162af11e5bd290930dec34328 = $(`<div id="html_3a7be67162af11e5bd290930dec34328" style="width: 100.0%; height: 100.0%;"><b>Austria</b><br>Revenue: ₹10,199<br>Color Level: orange</div>`)[0];
+                popup_2b4f3f077f11192bb87c2075b95082bb.setContent(html_3a7be67162af11e5bd290930dec34328);
+            
+        
+
+        circle_marker_f7672f1402f29b0d434e66d4f3534ef9.bindPopup(popup_2b4f3f077f11192bb87c2075b95082bb)
+        ;
+
+        
+    
+    
+            var circle_marker_2e8451a6111063adaff0c0c21e19e63d = L.circleMarker(
+                [30.8124247, 34.8594762],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_8b7fa488155bc03fcd4cd90679696eae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0eec0b819ffa30a6771b7a1d47ed7463 = $(`<div id="html_0eec0b819ffa30a6771b7a1d47ed7463" style="width: 100.0%; height: 100.0%;"><b>Israel</b><br>Revenue: ₹7,222<br>Color Level: orange</div>`)[0];
+                popup_8b7fa488155bc03fcd4cd90679696eae.setContent(html_0eec0b819ffa30a6771b7a1d47ed7463);
+            
+        
+
+        circle_marker_2e8451a6111063adaff0c0c21e19e63d.bindPopup(popup_8b7fa488155bc03fcd4cd90679696eae)
+        ;
+
+        
+    
+    
+            var circle_marker_433d52f9813abbaeaad7e5ae22458856 = L.circleMarker(
+                [38.9953683, 21.9877132],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_a60cf8c07fc594319a55639ceaf176ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af67dbdd43a7470dd8c640068fcc806a = $(`<div id="html_af67dbdd43a7470dd8c640068fcc806a" style="width: 100.0%; height: 100.0%;"><b>Greece</b><br>Revenue: ₹4,761<br>Color Level: orange</div>`)[0];
+                popup_a60cf8c07fc594319a55639ceaf176ab.setContent(html_af67dbdd43a7470dd8c640068fcc806a);
+            
+        
+
+        circle_marker_433d52f9813abbaeaad7e5ae22458856.bindPopup(popup_a60cf8c07fc594319a55639ceaf176ab)
+        ;
+
+        
+    
+    
+            var circle_marker_6f58ae551678d3280d14e1e774c4945f = L.circleMarker(
+                [64.9841821, -18.1059013],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_16ad02ef87ffc264b10876c855bfe7c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1fc9d9d515554109d51beb810978cd7 = $(`<div id="html_c1fc9d9d515554109d51beb810978cd7" style="width: 100.0%; height: 100.0%;"><b>Iceland</b><br>Revenue: ₹4,310<br>Color Level: orange</div>`)[0];
+                popup_16ad02ef87ffc264b10876c855bfe7c5.setContent(html_c1fc9d9d515554109d51beb810978cd7);
+            
+        
+
+        circle_marker_6f58ae551678d3280d14e1e774c4945f.bindPopup(popup_16ad02ef87ffc264b10876c855bfe7c5)
+        ;
+
+        
+    
+    
+            var circle_marker_ed67079335d6d3673d9ae95d5e330c43 = L.circleMarker(
+                [61.0666922, -107.991707],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_a835708995d1716aae27c3645cd1445a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30112612855951bf27124c118485f30e = $(`<div id="html_30112612855951bf27124c118485f30e" style="width: 100.0%; height: 100.0%;"><b>Canada</b><br>Revenue: ₹3,666<br>Color Level: lightgreen</div>`)[0];
+                popup_a835708995d1716aae27c3645cd1445a.setContent(html_30112612855951bf27124c118485f30e);
+            
+        
+
+        circle_marker_ed67079335d6d3673d9ae95d5e330c43.bindPopup(popup_a835708995d1716aae27c3645cd1445a)
+        ;
+
+        
+    
+    
+            var circle_marker_54ab58acd587fc84ae72861c17f21358 = L.circleMarker(
+                [39.7837304, -100.445882],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_dc679c095f9bca49494645ef8b97954b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3621816baedceabf2ca2179fc750d08f = $(`<div id="html_3621816baedceabf2ca2179fc750d08f" style="width: 100.0%; height: 100.0%;"><b>USA</b><br>Revenue: ₹3,580<br>Color Level: lightgreen</div>`)[0];
+                popup_dc679c095f9bca49494645ef8b97954b.setContent(html_3621816baedceabf2ca2179fc750d08f);
+            
+        
+
+        circle_marker_54ab58acd587fc84ae72861c17f21358.bindPopup(popup_dc679c095f9bca49494645ef8b97954b)
+        ;
+
+        
+    
+    
+            var circle_marker_bd9ad83e4a7790c200afeb8b506394b9 = L.circleMarker(
+                [35.8885993, 14.4476911],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_d2a4e73a309099f9df27b4b75657f19d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c638ef3ecefc2ce1f355e5120c679cb1 = $(`<div id="html_c638ef3ecefc2ce1f355e5120c679cb1" style="width: 100.0%; height: 100.0%;"><b>Malta</b><br>Revenue: ₹2,726<br>Color Level: lightgreen</div>`)[0];
+                popup_d2a4e73a309099f9df27b4b75657f19d.setContent(html_c638ef3ecefc2ce1f355e5120c679cb1);
+            
+        
+
+        circle_marker_bd9ad83e4a7790c200afeb8b506394b9.bindPopup(popup_d2a4e73a309099f9df27b4b75657f19d)
+        ;
+
+        
+    
+    
+            var circle_marker_8f5637226b5be84e4e7ead0f1d575034 = L.circleMarker(
+                [27.1556836, 65.6101216],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_f6c95f39f5a4c03f8794a52f6a5fb698 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc0b349c4503032e139e798318d9135b = $(`<div id="html_bc0b349c4503032e139e798318d9135b" style="width: 100.0%; height: 100.0%;"><b>Unspecified</b><br>Revenue: ₹2,667<br>Color Level: lightgreen</div>`)[0];
+                popup_f6c95f39f5a4c03f8794a52f6a5fb698.setContent(html_bc0b349c4503032e139e798318d9135b);
+            
+        
+
+        circle_marker_8f5637226b5be84e4e7ead0f1d575034.bindPopup(popup_f6c95f39f5a4c03f8794a52f6a5fb698)
+        ;
+
+        
+    
+    
+            var circle_marker_a9e396f9a4f00b9db10c48f80ce4d352 = L.circleMarker(
+                [24.0002488, 53.9994829],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_ad249610b157eba0e44e8db9f02f64be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_732e9bfc75ccbc1fa93b00f8e637fda6 = $(`<div id="html_732e9bfc75ccbc1fa93b00f8e637fda6" style="width: 100.0%; height: 100.0%;"><b>United Arab Emirates</b><br>Revenue: ₹1,902<br>Color Level: lightgreen</div>`)[0];
+                popup_ad249610b157eba0e44e8db9f02f64be.setContent(html_732e9bfc75ccbc1fa93b00f8e637fda6);
+            
+        
+
+        circle_marker_a9e396f9a4f00b9db10c48f80ce4d352.bindPopup(popup_ad249610b157eba0e44e8db9f02f64be)
+        ;
+
+        
+    
+    
+            var circle_marker_e1380163ca0a1f8a7ff134f35e8eeda7 = L.circleMarker(
+                [33.8750629, 35.843409],
+                {"bubblingMouseEvents": true, "color": "lightgreen", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightgreen", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_58667ea7f164d8b65099addeccd25a85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50cc272c5bcccca7e7f92e2d2c30beb7 = $(`<div id="html_50cc272c5bcccca7e7f92e2d2c30beb7" style="width: 100.0%; height: 100.0%;"><b>Lebanon</b><br>Revenue: ₹1,694<br>Color Level: lightgreen</div>`)[0];
+                popup_58667ea7f164d8b65099addeccd25a85.setContent(html_50cc272c5bcccca7e7f92e2d2c30beb7);
+            
+        
+
+        circle_marker_e1380163ca0a1f8a7ff134f35e8eeda7.bindPopup(popup_58667ea7f164d8b65099addeccd25a85)
+        ;
+
+        
+    
+    
+            var circle_marker_b362c832ec936c519dcab10ee5e16c54 = L.circleMarker(
+                [55.3500003, 23.7499997],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_c4a6152ca2df8a7c17a31c6a9e956e6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d2aa44e86d082e5a19b35af7f2d2ce6 = $(`<div id="html_8d2aa44e86d082e5a19b35af7f2d2ce6" style="width: 100.0%; height: 100.0%;"><b>Lithuania</b><br>Revenue: ₹1,661<br>Color Level: green</div>`)[0];
+                popup_c4a6152ca2df8a7c17a31c6a9e956e6d.setContent(html_8d2aa44e86d082e5a19b35af7f2d2ce6);
+            
+        
+
+        circle_marker_b362c832ec936c519dcab10ee5e16c54.bindPopup(popup_c4a6152ca2df8a7c17a31c6a9e956e6d)
+        ;
+
+        
+    
+    
+            var circle_marker_36d47d248e77bffad83d6d1ad516edaa = L.circleMarker(
+                [24.2222445, 120.6898197],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_0debeea8790798decd1e0eadf8bd4bf7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d15e786f5a1f7bf845c80e7f8227bf7e = $(`<div id="html_d15e786f5a1f7bf845c80e7f8227bf7e" style="width: 100.0%; height: 100.0%;"><b>European Community</b><br>Revenue: ₹1,300<br>Color Level: green</div>`)[0];
+                popup_0debeea8790798decd1e0eadf8bd4bf7.setContent(html_d15e786f5a1f7bf845c80e7f8227bf7e);
+            
+        
+
+        circle_marker_36d47d248e77bffad83d6d1ad516edaa.bindPopup(popup_0debeea8790798decd1e0eadf8bd4bf7)
+        ;
+
+        
+    
+    
+            var circle_marker_290a0c80fd6ff5006b0155f8a9de093a = L.circleMarker(
+                [-10.3333333, -53.2],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_4af8209a6cfb852a2617daaade72c242 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_254346ddf30c07b84749f6d0ecc9452c = $(`<div id="html_254346ddf30c07b84749f6d0ecc9452c" style="width: 100.0%; height: 100.0%;"><b>Brazil</b><br>Revenue: ₹1,144<br>Color Level: green</div>`)[0];
+                popup_4af8209a6cfb852a2617daaade72c242.setContent(html_254346ddf30c07b84749f6d0ecc9452c);
+            
+        
+
+        circle_marker_290a0c80fd6ff5006b0155f8a9de093a.bindPopup(popup_4af8209a6cfb852a2617daaade72c242)
+        ;
+
+        
+    
+    
+            var circle_marker_590ee647b28f8e761e2a963cf8f04f59 = L.circleMarker(
+                [-28.8166236, 24.991639],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_58778d21adab9afea1a578e3f9f1b4fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c66ed14329be36ba570c5082083f74e4 = $(`<div id="html_c66ed14329be36ba570c5082083f74e4" style="width: 100.0%; height: 100.0%;"><b>RSA</b><br>Revenue: ₹1,002<br>Color Level: green</div>`)[0];
+                popup_58778d21adab9afea1a578e3f9f1b4fe.setContent(html_c66ed14329be36ba570c5082083f74e4);
+            
+        
+
+        circle_marker_590ee647b28f8e761e2a963cf8f04f59.bindPopup(popup_58778d21adab9afea1a578e3f9f1b4fe)
+        ;
+
+        
+    
+    
+            var circle_marker_f52dcbd3d9360651c69a289ccd9aeba8 = L.circleMarker(
+                [49.7439047, 15.3381061],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_50ed7f7198116e299046a1c3deb371bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6c82e80a629464a3cc3da19614a841a = $(`<div id="html_e6c82e80a629464a3cc3da19614a841a" style="width: 100.0%; height: 100.0%;"><b>Czech Republic</b><br>Revenue: ₹827<br>Color Level: green</div>`)[0];
+                popup_50ed7f7198116e299046a1c3deb371bf.setContent(html_e6c82e80a629464a3cc3da19614a841a);
+            
+        
+
+        circle_marker_f52dcbd3d9360651c69a289ccd9aeba8.bindPopup(popup_50ed7f7198116e299046a1c3deb371bf)
+        ;
+
+        
+    
+    
+            var circle_marker_871bd4fbeaabd213f18c898a42a2d964 = L.circleMarker(
+                [26.1551249, 50.5344606],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_0e6c4c3244c98d0b25e68fa67b4b2d7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_875fcbaf1bcc823e7f3987841b97fd2b = $(`<div id="html_875fcbaf1bcc823e7f3987841b97fd2b" style="width: 100.0%; height: 100.0%;"><b>Bahrain</b><br>Revenue: ₹548<br>Color Level: green</div>`)[0];
+                popup_0e6c4c3244c98d0b25e68fa67b4b2d7f.setContent(html_875fcbaf1bcc823e7f3987841b97fd2b);
+            
+        
+
+        circle_marker_871bd4fbeaabd213f18c898a42a2d964.bindPopup(popup_0e6c4c3244c98d0b25e68fa67b4b2d7f)
+        ;
+
+        
+    
+    
+            var circle_marker_c3cc7df45cf0efe52ac8858371b3a588 = L.circleMarker(
+                [25.6242618, 42.3528328],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2);
+        
+    
+        var popup_0f4f7d240dea7ad08e1017facf3aaafa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15b87986e14a45b9d7d0d1bdba8ad178 = $(`<div id="html_15b87986e14a45b9d7d0d1bdba8ad178" style="width: 100.0%; height: 100.0%;"><b>Saudi Arabia</b><br>Revenue: ₹146<br>Color Level: green</div>`)[0];
+                popup_0f4f7d240dea7ad08e1017facf3aaafa.setContent(html_15b87986e14a45b9d7d0d1bdba8ad178);
+            
+        
+
+        circle_marker_c3cc7df45cf0efe52ac8858371b3a588.bindPopup(popup_0f4f7d240dea7ad08e1017facf3aaafa)
+        ;
+
+        
+    
+    
+            marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2.addTo(map_231ea738cfe8d104dbc97192434589ee);
+        
+    
+            tile_layer_c1750c194d53fd8a1cb88893ebfe0f16.addTo(map_231ea738cfe8d104dbc97192434589ee);
+        
+    
+            marker_cluster_6234749ff5aab13cb1f6bd0d0d9085c2.addTo(map_231ea738cfe8d104dbc97192434589ee);
+        
+</script>
+</html>
