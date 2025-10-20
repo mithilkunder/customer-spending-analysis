@@ -1,0 +1,20 @@
+# Core Data Analysis
+pandas
+numpy
+
+# Visualization
+matplotlib
+seaborn
+folium
+
+# Machine Learning & Clustering
+scikit-learn
+
+# Geocoding & API
+geopy
+requests
+holidays
+
+# Jupyter Notebook
+notebook
+jupyterlab
